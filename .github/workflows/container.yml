@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Find reference branch
-        uses: greenbone/actions/container-image-tags@v1
+        uses: greenbone/actions/container-image-tags@v2
         id: container
         with:
           image-name: ${{ github.repository }}-build
@@ -45,7 +45,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Gather container image tags
-        uses: greenbone/actions/container-image-tags@v1
+        uses: greenbone/actions/container-image-tags@v2
         id: container
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
