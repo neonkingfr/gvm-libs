@@ -94,7 +94,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger main ${{ matrix.repository }} container image build
-        uses: greenbone/actions/trigger-workflow@v2
+        uses: greenbone/actions/trigger-workflow@v3
         with:
           token: ${{ secrets.GREENBONE_BOT_TOKEN }}
           repository: ${{ matrix.repository }}
